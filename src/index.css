@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@500&display=swap');
+
+:root {
+  --dark-background : rgb(0,23,38);
+  --dark-background-2 : rgb(1,15,27);
+  --dark-text-col : white;
+
+
+  --light-background : rgb(236,236,236);
+  --light-background-2 : rgb(225,225,224);
+  --light-text-col : rgb(0, 47, 78);
+
+  --secondary-col : rgb(238, 178, 17);
+}
+
+
+body {
+  margin: 0;
+  /* font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif; */
+}
+
+.dark-theme{
+  background-color: var(--dark-background);
+  color: var(--dark-text-col);
+}
+
+.light-theme{
+  background-color: var(--light-background);
+  color: var(--light-text-col);
+}
+
+.sec-dark-theme {
+  background-color: var(--dark-background-2);
+}
+
+.sec-light-theme {
+  background-color: var(--light-background-2);
+  color: black;
+}
+
+.dark-btn {
+  outline: 0;
+  border: 0;
+  border-radius: 10px;
+  background-color: var(--dark-background-2);
+  color: var(--dark-text-col);
+  cursor: pointer;
+}
+
+.light-btn {
+  outline: 0;
+  border: 0;
+  border-radius: 10px;
+  background-color: var(--light-background-2);
+  color: var(--secondary-col);
+  cursor: pointer;
+}
+
+
+.fn-btn {
+  outline: 0;
+  border: 1px solid transparent;
+  transition-duration: 0.2s;
+  padding: 2px 10px;
+  border-radius: 10px;
+  background-color: rgb(154, 89, 234);
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  cursor: pointer;
+}
+
+.dark-editor {
+  background-color: var(--dark-background);
+  color: var(--dark-text-col);
+}
+
+.light-editor {
+  background-color: white;
+  color: var(--light-text-col);
+}
