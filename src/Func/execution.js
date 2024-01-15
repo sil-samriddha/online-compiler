@@ -17,6 +17,12 @@ const execution = async (code, language, input) => {
         }
     
         const res = await fetch (url, config);
+
+        if (res.status != 200) {
+            return {
+                error : 'Service Not Available'
+            }
+        }
         const json = await res.json();
 
         if (json.error == 'CodeX API Timed Out. Your code took too long to execute, over 30 seconds. Make sure you are sending input as payload if your code expects an input.'){
